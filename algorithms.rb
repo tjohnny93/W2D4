@@ -31,7 +31,7 @@ p my_min2(list)  # =>  -5
 def largest_contiguous_subsum(arr)
   subsets = []
   arr.each_with_index do |n1, i|
-      subsets << [n1]
+    subsets << [n1]
     arr.each_with_index do |n2, j|
       if i < j
         subsets << arr[i..j]
